@@ -15,6 +15,7 @@
 		8351E9DB26E5DF390028224D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8351E9D926E5DF390028224D /* LaunchScreen.storyboard */; };
 		8351E9E626E5DF390028224D /* Slots_DemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8351E9E526E5DF390028224D /* Slots_DemoTests.swift */; };
 		8351E9F126E5DF390028224D /* Slots_DemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8351E9F026E5DF390028224D /* Slots_DemoUITests.swift */; };
+		8351EA0126E6331E0028224D /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8351EA0026E6331E0028224D /* CardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		8351E9EC26E5DF390028224D /* Slots-DemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Slots-DemoUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8351E9F026E5DF390028224D /* Slots_DemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Slots_DemoUITests.swift; sourceTree = "<group>"; };
 		8351E9F226E5DF390028224D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8351EA0026E6331E0028224D /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 				8351E9CE26E5DF380028224D /* AppDelegate.swift */,
 				8351E9D026E5DF380028224D /* SceneDelegate.swift */,
 				8351E9D226E5DF380028224D /* ContentView.swift */,
+				8351EA0026E6331E0028224D /* CardView.swift */,
 				8351E9D426E5DF390028224D /* Assets.xcassets */,
 				8351E9D926E5DF390028224D /* LaunchScreen.storyboard */,
 				8351E9DC26E5DF390028224D /* Info.plist */,
@@ -268,6 +271,7 @@
 			files = (
 				8351E9CF26E5DF380028224D /* AppDelegate.swift in Sources */,
 				8351E9D126E5DF380028224D /* SceneDelegate.swift in Sources */,
+				8351EA0126E6331E0028224D /* CardView.swift in Sources */,
 				8351E9D326E5DF380028224D /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
