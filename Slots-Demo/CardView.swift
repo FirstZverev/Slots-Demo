@@ -11,25 +11,62 @@ struct CardView: View {
     @GestureState private var isDetectingPress = false
     @Binding var symbol: String
     @Binding var background: Color
+    private let transition: AnyTransition = AnyTransition.move(edge: .bottom)
     
     var body: some View {
-        Image(symbol)
-            .resizable()
-            .padding(.all)
-            .aspectRatio(1, contentMode: .fit)
-            .background(background.opacity(0.5))
-            .cornerRadius(20)
-            .scaleEffect(isDetectingPress ? 0.8 : 1)
-            .animation(.easeIn)
-                        .gesture(LongPressGesture(minimumDuration: 0.1).sequenced(before:DragGesture(minimumDistance: 0))
-                            .updating($isDetectingPress) { value, state, _ in
-                                switch value {
-                                    case .second(true, nil):
-                                        state = true
-                                    default:
-                                        break
-                                }
-                        })
+        VStack {
+            if background == Color.green {
+                if symbol == "Avocado" {
+                    Image(symbol)
+                        .resizable()
+                        .padding(.all)
+                        .aspectRatio(1, contentMode: .fit)
+                        .transition(transition)
+                        .animation(.spring(response: 0.7, dampingFraction: 0.3))
+                    
+                } else if symbol == "Сorn" {
+                    Image(symbol)
+                        .resizable()
+                        .padding(.all)
+                        .aspectRatio(1, contentMode: .fit)
+                        .transition(transition)
+                        .animation(.spring(response: 0.7, dampingFraction: 0.3))
+
+                } else {
+                    Image(symbol)
+                        .resizable()
+                        .padding(.all)
+                        .aspectRatio(1, contentMode: .fit)
+                        .transition(transition)
+                        .animation(.spring(response: 0.7, dampingFraction: 0.3))
+                }
+            } else {
+                if symbol == "Avocado" {
+                    Image(symbol)
+                        .resizable()
+                        .padding(.all)
+                        .aspectRatio(1, contentMode: .fit)
+                        .transition(transition)
+                    
+                } else if symbol == "Сorn" {
+                    Image(symbol)
+                        .resizable()
+                        .padding(.all)
+                        .aspectRatio(1, contentMode: .fit)
+                        .transition(transition)
+
+                } else {
+                    Image(symbol)
+                        .resizable()
+                        .padding(.all)
+                        .aspectRatio(1, contentMode: .fit)
+                        .transition(transition)
+                }
+            }
+        }
+        .background(background.opacity(0.5))
+        .cornerRadius(20)
+
     }
 }
 
